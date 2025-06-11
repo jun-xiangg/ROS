@@ -5,12 +5,16 @@
 
 #使用說明:
 
+cd ~/catkin_ws
+catkin_make
+
+
 1.
 開啟終端機(1)  
-rosrun  
+roslaunch robot_vacuum_description display.launch
 開啟終端機(2)  
-rosrun  
+roslaunch robot_vacuum_description gazebo.launch 
 開啟終端機(3)  
-rosrun  
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 //清楚描述如何安裝與執行你的ROS套件
