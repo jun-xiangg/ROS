@@ -23,9 +23,11 @@ roslaunch robot_vacuum_description navigation.launch
 
 開啟終端機(3)  移動
 ```
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
+```
 ``` 
-
+rosrun robot_vacuum_description send_goal.py  
+``` 
 建構SLAM
 ```
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping   
