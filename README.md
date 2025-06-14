@@ -33,7 +33,9 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 rosrun map_server map_saver-f ~/maproom   
 ```
-
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/maproom.yaml
+```
 //清楚描述如何安裝與執行你的ROS套件
 ```
 roslaunch robot_vacuum_description gazebo.launch
