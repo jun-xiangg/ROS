@@ -9,20 +9,26 @@ cd ~/catkin_ws
 catkin_make
 
 1.
-開啟終端機(1)
+開啟終端機(1) RViz
 ```
 roslaunch robot_vacuum_description display.launch
 ```
-開啟終端機(2) 
-
-
+開啟終端機(2) 開地圖
 ```
 roslaunch robot_vacuum_description world.launch
 ```
-開啟終端機(3)  
+開啟終端機(3)  移動
 ```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ``` 
+
+建構SLAM
+```
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping   
+```
+```
+rosrun map_server map_saver-f ~/maproom   
+```
 
 //清楚描述如何安裝與執行你的ROS套件
 ```
