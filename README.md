@@ -17,6 +17,10 @@ roslaunch robot_vacuum_description display.launch
 ```
 roslaunch robot_vacuum_description world.launch
 ```
+```
+roslaunch robot_vacuum_description/navigation.launch   
+```
+
 開啟終端機(3)  移動
 ```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
