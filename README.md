@@ -13,11 +13,17 @@ catkin_make
 ```
 roslaunch robot_vacuum_description display.launch
 ```
-開啟終端機(2)  
+開啟終端機(2) 
+```
 roslaunch robot_vacuum_description gazebo.launch
+```
 
-roslaunch robot_vacuum_description world.launch  
+```
+roslaunch robot_vacuum_description world.launch
+```
 開啟終端機(3)  
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py   
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+``` 
 
 //清楚描述如何安裝與執行你的ROS套件
